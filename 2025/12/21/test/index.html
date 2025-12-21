@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+  <title>
+    
+    test 丨
+    
+
+    typo
+  </title>
+
+  
+  <link rel="shortcut icon" href="../../../../icon.svg">
+  
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <link id="theme" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.css">
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js"></script>
+  
+
+  <!-- 字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+  
+<link rel="stylesheet" href="../../../../css/root.css">
+
+  
+<link rel="stylesheet" href="../../../../css/style.css">
+
+  
+<link rel="stylesheet" href="../../../../css/post.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <header class="header">
+  <section class="header-container">
+    <a class="logo" href="../../../../index.html">CattailRO的博客</a>
+    <ul class="nav">
+      
+      <li><a href="../../../../archives">archives</a></li>
+      
+      <li><a href="../../../../about">about</a></li>
+      
+    </ul>
+  </section>
+</header>
+  <main class="main">
+    <article class="post">
+  
+  <div class="post-title">test</div>
+  <div class="post-meta">
+    <div class="date">2025 December 21st</div>
+    <div class="tags">
+      
+    </div>
+  </div>
+  
+
+  <main class="post-content"><h1 id="代码高亮测试文档"><a href="#代码高亮测试文档" class="headerlink" title="代码高亮测试文档"></a>代码高亮测试文档</h1><p>这是一个用于测试博客代码高亮功能的Markdown文档。它包含了多种编程语言的示例代码。</p>
+<h2 id="1-JavaScript示例"><a href="#1-JavaScript示例" class="headerlink" title="1. JavaScript示例"></a>1. JavaScript示例</h2><pre><code class="javascript">// 计算斐波那契数列
+function fibonacci(n) &#123;
+    if (n &lt;= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+&#125;
+
+// 使用Promise处理异步操作
+async function fetchData(url) &#123;
+    try &#123;
+        const response = await fetch(url);
+        const data = await response.json();
+        return data;
+    &#125; catch (error) &#123;
+        console.error(&#39;获取数据失败:&#39;, error);
+        throw error;
+    &#125;
+&#125;
+
+// ES6类示例
+class Animal &#123;
+    constructor(name) &#123;
+        this.name = name;
+    &#125;
+    
+    speak() &#123;
+        console.log(`$&#123;this.name&#125; 发出声音`);
+    &#125;
+&#125;
+
+class Dog extends Animal &#123;
+    constructor(name, breed) &#123;
+        super(name);
+        this.breed = breed;
+    &#125;
+    
+    speak() &#123;
+        console.log(`$&#123;this.name&#125; 汪汪叫`);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="2-Python示例"><a href="#2-Python示例" class="headerlink" title="2. Python示例"></a>2. Python示例</h2><pre><code class="python"># 快速排序算法实现
+def quicksort(arr):
+    if len(arr) &lt;= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x &lt; pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x &gt; pivot]
+    return quicksort(left) + middle + quicksort(right)
+
+# 使用生成器处理大数据集
+def read_large_file(file_path):
+    with open(file_path, &#39;r&#39;) as file:
+        for line in file:
+            yield line.strip()
+
+# 装饰器示例
+def timer(func):
+    import time
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f&quot;&#123;func.__name__&#125; 执行时间: &#123;end - start:.4f&#125;秒&quot;)
+        return result
+    return wrapper
+
+@timer
+def slow_function():
+    import time
+    time.sleep(2)
+    return &quot;完成&quot;
+</code></pre>
+<h2 id="3-HTML-CSS示例"><a href="#3-HTML-CSS示例" class="headerlink" title="3. HTML&#x2F;CSS示例"></a>3. HTML&#x2F;CSS示例</h2><pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;响应式卡片&lt;/title&gt;
+    &lt;style&gt;
+        * &#123;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        &#125;
+        
+        body &#123;
+            font-family: &#39;Segoe UI&#39;, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        &#125;
+        
+        .card &#123;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        &#125;
+        
+        .card:hover &#123;
+            transform: translateY(-10px);
+        &#125;
+        
+        .card-header &#123;
+            background: #4f46e5;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        &#125;
+        
+        .card-body &#123;
+            padding: 30px;
+        &#125;
+        
+        @media (max-width: 480px) &#123;
+            .card &#123;
+                max-width: 100%;
+            &#125;
+        &#125;
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-header&quot;&gt;
+            &lt;h1&gt;响应式卡片&lt;/h1&gt;
+            &lt;p&gt;CSS Grid + Flexbox布局&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;p&gt;这是一个使用现代CSS技术创建的响应式卡片组件。&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h2 id="4-Java示例"><a href="#4-Java示例" class="headerlink" title="4. Java示例"></a>4. Java示例</h2><pre><code class="java">import java.util.*;
+
+// 单例模式实现
+public class DatabaseConnection &#123;
+    private static DatabaseConnection instance;
+    private Connection connection;
+    
+    private DatabaseConnection() &#123;
+        // 私有构造函数
+        try &#123;
+            this.connection = DriverManager.getConnection(
+                &quot;jdbc:mysql://localhost:3306/mydb&quot;, 
+                &quot;user&quot;, 
+                &quot;password&quot;
+            );
+        &#125; catch (SQLException e) &#123;
+            e.printStackTrace();
+        &#125;
+    &#125;
+    
+    public static synchronized DatabaseConnection getInstance() &#123;
+        if (instance == null) &#123;
+            instance = new DatabaseConnection();
+        &#125;
+        return instance;
+    &#125;
+    
+    public Connection getConnection() &#123;
+        return connection;
+    &#125;
+&#125;
+
+// 使用Lambda表达式和Stream API
+public class StreamExample &#123;
+    public static void main(String[] args) &#123;
+        List&lt;String&gt; names = Arrays.asList(&quot;Alice&quot;, &quot;Bob&quot;, &quot;Charlie&quot;, &quot;David&quot;);
+        
+        // 过滤并转换字符串
+        List&lt;String&gt; result = names.stream()
+            .filter(name -&gt; name.length() &gt; 4)
+            .map(String::toUpperCase)
+            .sorted()
+            .collect(Collectors.toList());
+        
+        System.out.println(result);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="5-C语言示例"><a href="#5-C语言示例" class="headerlink" title="5. C语言示例"></a>5. C语言示例</h2><pre><code class="c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+// 链表节点结构
+typedef struct Node &#123;
+    int data;
+    struct Node* next;
+&#125; Node;
+
+// 创建新节点
+Node* createNode(int data) &#123;
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    if (!newNode) &#123;
+        printf(&quot;内存分配失败\n&quot;);
+        exit(1);
+    &#125;
+    newNode-&gt;data = data;
+    newNode-&gt;next = NULL;
+    return newNode;
+&#125;
+
+// 反转链表
+Node* reverseList(Node* head) &#123;
+    Node* prev = NULL;
+    Node* current = head;
+    Node* next = NULL;
+    
+    while (current != NULL) &#123;
+        next = current-&gt;next;
+        current-&gt;next = prev;
+        prev = current;
+        current = next;
+    &#125;
+    
+    return prev;
+&#125;
+
+// 二分查找算法
+int binarySearch(int arr[], int left, int right, int target) &#123;
+    while (left &lt;= right) &#123;
+        int mid = left + (right - left) / 2;
+        
+        if (arr[mid] == target)
+            return mid;
+        
+        if (arr[mid] &lt; target)
+            left = mid + 1;
+        else
+            right = mid - 1;
+    &#125;
+    
+    return -1;
+&#125;
+</code></pre>
+<h2 id="6-SQL示例"><a href="#6-SQL示例" class="headerlink" title="6. SQL示例"></a>6. SQL示例</h2><pre><code class="sql">-- 创建用户表
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    is_active BOOLEAN DEFAULT TRUE
+);
+
+-- 创建文章表
+CREATE TABLE articles (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    title VARCHAR(200) NOT NULL,
+    content TEXT NOT NULL,
+    published_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    views INT DEFAULT 0,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- 复杂查询：获取用户及其文章数量
+SELECT 
+    u.username,
+    u.email,
+    COUNT(a.id) as article_count,
+    MAX(a.published_at) as latest_article_date
+FROM users u
+LEFT JOIN articles a ON u.id = a.user_id
+WHERE u.is_active = TRUE
+GROUP BY u.id, u.username, u.email
+HAVING COUNT(a.id) &gt; 0
+ORDER BY article_count DESC;
+
+-- 创建索引以提高查询性能
+CREATE INDEX idx_articles_user_id ON articles(user_id);
+CREATE INDEX idx_articles_published ON articles(published_at DESC);
+</code></pre>
+<h2 id="7-Shell-Bash示例"><a href="#7-Shell-Bash示例" class="headerlink" title="7. Shell&#x2F;Bash示例"></a>7. Shell&#x2F;Bash示例</h2><pre><code class="bash">#!/bin/bash
+
+# 备份脚本
+BACKUP_DIR=&quot;/backup&quot;
+LOG_FILE=&quot;/var/log/backup.log&quot;
+DATE=$(date +%Y%m%d_%H%M%S)
+
+# 记录日志函数
+log_message() &#123;
+    echo &quot;[$(date &#39;+%Y-%m-%d %H:%M:%S&#39;)] $1&quot; | tee -a &quot;$LOG_FILE&quot;
+&#125;
+
+# 检查目录是否存在
+check_directory() &#123;
+    if [ ! -d &quot;$1&quot; ]; then
+        log_message &quot;错误: 目录 $1 不存在&quot;
+        exit 1
+    fi
+&#125;
+
+# 执行备份
+perform_backup() &#123;
+    local source_dir=$1
+    local backup_name=$2
+    
+    log_message &quot;开始备份: $backup_name&quot;
+    
+    # 创建备份
+    tar -czf &quot;$BACKUP_DIR/$&#123;backup_name&#125;_$&#123;DATE&#125;.tar.gz&quot; -C &quot;$(dirname &quot;$source_dir&quot;)&quot; &quot;$(basename &quot;$source_dir&quot;)&quot;
+    
+    if [ $? -eq 0 ]; then
+        log_message &quot;备份成功: $backup_name&quot;
+        
+        # 删除7天前的旧备份
+        find &quot;$BACKUP_DIR&quot; -name &quot;$&#123;backup_name&#125;_*.tar.gz&quot; -mtime +7 -delete
+        log_message &quot;清理7天前的备份&quot;
+    else
+        log_message &quot;备份失败: $backup_name&quot;
+        exit 1
+    fi
+&#125;
+
+# 主函数
+main() &#123;
+    check_directory &quot;$BACKUP_DIR&quot;
+    
+    # 备份重要目录
+    perform_backup &quot;/var/www/html&quot; &quot;website&quot;
+    perform_backup &quot;/home/user/documents&quot; &quot;documents&quot;
+    perform_backup &quot;/etc&quot; &quot;config&quot;
+    
+    log_message &quot;所有备份完成&quot;
+&#125;
+
+# 执行主函数
+main
+</code></pre>
+<h2 id="8-TypeScript示例"><a href="#8-TypeScript示例" class="headerlink" title="8. TypeScript示例"></a>8. TypeScript示例</h2><pre><code class="typescript">// 泛型接口
+interface ApiResponse&lt;T&gt; &#123;
+    data: T;
+    status: number;
+    message: string;
+&#125;
+
+// 用户类型定义
+interface User &#123;
+    id: number;
+    name: string;
+    email: string;
+    role: &#39;admin&#39; | &#39;user&#39; | &#39;guest&#39;;
+&#125;
+
+// 泛型函数
+async function fetchApi&lt;T&gt;(url: string): Promise&lt;ApiResponse&lt;T&gt;&gt; &#123;
+    const response = await fetch(url);
+    if (!response.ok) &#123;
+        throw new Error(`HTTP错误: $&#123;response.status&#125;`);
+    &#125;
+    return response.json();
+&#125;
+
+// 使用装饰器
+function logMethod(target: any, propertyKey: string, descriptor: PropertyDescriptor) &#123;
+    const originalMethod = descriptor.value;
+    
+    descriptor.value = function(...args: any[]) &#123;
+        console.log(`调用方法: $&#123;propertyKey&#125;`);
+        console.log(`参数: $&#123;JSON.stringify(args)&#125;`);
+        const result = originalMethod.apply(this, args);
+        console.log(`返回值: $&#123;JSON.stringify(result)&#125;`);
+        return result;
+    &#125;;
+    
+    return descriptor;
+&#125;
+
+// 类使用装饰器
+class UserService &#123;
+    private users: User[] = [];
+    
+    @logMethod
+    addUser(user: User): User &#123;
+        this.users.push(user);
+        return user;
+    &#125;
+    
+    @logMethod
+    findUserById(id: number): User | undefined &#123;
+        return this.users.find(user =&gt; user.id === id);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="9-Rust示例"><a href="#9-Rust示例" class="headerlink" title="9. Rust示例"></a>9. Rust示例</h2><pre><code class="rust">use std::collections::HashMap;
+use std::fmt;
+
+// 定义枚举
+enum WebEvent &#123;
+    PageLoad,
+    PageUnload,
+    KeyPress(char),
+    Paste(String),
+    Click &#123; x: i64, y: i64 &#125;,
+&#125;
+
+// 实现方法
+impl WebEvent &#123;
+    fn log(&amp;self) &#123;
+        match self &#123;
+            WebEvent::PageLoad =&gt; println!(&quot;页面加载&quot;),
+            WebEvent::PageUnload =&gt; println!(&quot;页面卸载&quot;),
+            WebEvent::KeyPress(c) =&gt; println!(&quot;按键: &#123;&#125;&quot;, c),
+            WebEvent::Paste(s) =&gt; println!(&quot;粘贴: \&quot;&#123;&#125;\&quot;&quot;, s),
+            WebEvent::Click &#123; x, y &#125; =&gt; println!(&quot;点击位置: (&#123;&#125;, &#123;&#125;)&quot;, x, y),
+        &#125;
+    &#125;
+&#125;
+
+// 结构体
+struct Rectangle &#123;
+    width: u32,
+    height: u32,
+&#125;
+
+impl Rectangle &#123;
+    // 关联函数
+    fn new(width: u32, height: u32) -&gt; Self &#123;
+        Self &#123; width, height &#125;
+    &#125;
+    
+    // 方法
+    fn area(&amp;self) -&gt; u32 &#123;
+        self.width * self.height
+    &#125;
+    
+    fn can_hold(&amp;self, other: &amp;Rectangle) -&gt; bool &#123;
+        self.width &gt; other.width &amp;&amp; self.height &gt; other.height
+    &#125;
+&#125;
+
+// 为结构体实现Display trait
+impl fmt::Display for Rectangle &#123;
+    fn fmt(&amp;self, f: &amp;mut fmt::Formatter) -&gt; fmt::Result &#123;
+        write!(f, &quot;矩形: &#123;&#125;x&#123;&#125; (面积: &#123;&#125;)&quot;, 
+               self.width, self.height, self.area())
+    &#125;
+&#125;
+
+fn main() &#123;
+    let rect = Rectangle::new(30, 50);
+    println!(&quot;&#123;&#125;&quot;, rect);
+    
+    let mut scores = HashMap::new();
+    scores.insert(String::from(&quot;Blue&quot;), 10);
+    scores.insert(String::from(&quot;Yellow&quot;), 50);
+    
+    for (key, value) in &amp;scores &#123;
+        println!(&quot;&#123;&#125;: &#123;&#125;&quot;, key, value);
+    &#125;
+&#125;
+</code></pre>
+<h2 id="10-Go示例"><a href="#10-Go示例" class="headerlink" title="10. Go示例"></a>10. Go示例</h2><pre><code class="go">package main
+
+import (
+    &quot;encoding/json&quot;
+    &quot;fmt&quot;
+    &quot;log&quot;
+    &quot;net/http&quot;
+    &quot;sync&quot;
+    &quot;time&quot;
+)
+
+// 结构体定义
+type User struct &#123;
+    ID        int       `json:&quot;id&quot;`
+    Username  string    `json:&quot;username&quot;`
+    Email     string    `json:&quot;email&quot;`
+    CreatedAt time.Time `json:&quot;created_at&quot;`
+&#125;
+
+// 方法定义
+func (u *User) String() string &#123;
+    return fmt.Sprintf(&quot;User&#123;ID: %d, Username: %s, Email: %s&#125;&quot;, 
+        u.ID, u.Username, u.Email)
+&#125;
+
+// 接口定义
+type Repository interface &#123;
+    FindByID(id int) (*User, error)
+    Save(user *User) error
+&#125;
+
+// 使用goroutine和channel
+func processUsers(users []User) &lt;-chan string &#123;
+    results := make(chan string, len(users))
+    var wg sync.WaitGroup
+    
+    for _, user := range users &#123;
+        wg.Add(1)
+        go func(u User) &#123;
+            defer wg.Done()
+            // 模拟处理过程
+            time.Sleep(100 * time.Millisecond)
+            results &lt;- fmt.Sprintf(&quot;处理用户: %s&quot;, u.Username)
+        &#125;(user)
+    &#125;
+    
+    go func() &#123;
+        wg.Wait()
+        close(results)
+    &#125;()
+    
+    return results
+&#125;
+
+// HTTP处理器
+func userHandler(w http.ResponseWriter, r *http.Request) &#123;
+    user := &amp;User&#123;
+        ID:        1,
+        Username:  &quot;john_doe&quot;,
+        Email:     &quot;john@example.com&quot;,
+        CreatedAt: time.Now(),
+    &#125;
+    
+    w.Header().Set(&quot;Content-Type&quot;, &quot;application/json&quot;)
+    json.NewEncoder(w).Encode(user)
+&#125;
+
+func main() &#123;
+    // 启动HTTP服务器
+    http.HandleFunc(&quot;/user&quot;, userHandler)
+    log.Println(&quot;服务器启动在 :8080&quot;)
+    log.Fatal(http.ListenAndServe(&quot;:8080&quot;, nil))
+&#125;
+</code></pre>
+<h2 id="11-内联代码示例"><a href="#11-内联代码示例" class="headerlink" title="11. 内联代码示例"></a>11. 内联代码示例</h2><p>除了代码块，我们还可以在段落中使用<code>内联代码</code>，例如：使用<code>console.log()</code>打印输出，或者调用<code>processData()</code>函数。</p>
+<p>在数学计算中，我们可以用<code>sqrt(x)</code>计算平方根，用<code>pow(x, y)</code>计算x的y次方。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这篇文章包含了多种编程语言的代码示例，可用于测试博客的代码高亮功能。每种语言都有其独特的语法特点，良好的代码高亮能够显著改善代码的可读性。</p>
+<p>要测试高亮效果，请将此Markdown文档上传到您的博客系统，并查看渲染后的效果。</p>
+</main>
+
+</article>
+
+
+<script src="../../../../js/highlight.js"></script>
+
+  </main>
+  <footer class="footer">
+  
+  <span>Copyright © 2024 typo</span>
+  
+</footer>
+  
+<script src="../../../../js/theme.js"></script>
+
+</body>
+
+</html>
