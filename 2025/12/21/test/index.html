@@ -64,7 +64,7 @@
   
 
   <main class="post-content"><h1><span id="代码高亮测试文档">代码高亮测试文档</span></h1><p>这是一个用于测试博客代码高亮功能的Markdown文档。它包含了多种编程语言的示例代码。</p>
-<h2><span id="1-javascript示例">1. JavaScript示例</span></h2><pre><code class="javascript">// 计算斐波那契数列
+<h2><span id="1-javascript示例">1. JavaScript示例</span></h2><pre><code class="language-javascript">// 计算斐波那契数列
 function fibonacci(n) &#123;
     if (n &lt;= 1) return n;
     return fibonacci(n - 1) + fibonacci(n - 2);
@@ -104,7 +104,7 @@ class Dog extends Animal &#123;
     &#125;
 &#125;
 </code></pre>
-<h2><span id="2-python示例">2. Python示例</span></h2><pre><code class="python"># 快速排序算法实现
+<h2><span id="2-python示例">2. Python示例</span></h2><pre><code class="language-python"># 快速排序算法实现
 def quicksort(arr):
     if len(arr) &lt;= 1:
         return arr
@@ -137,7 +137,7 @@ def slow_function():
     time.sleep(2)
     return &quot;完成&quot;
 </code></pre>
-<h2><span id="3-htmlx2fcss示例">3. HTML&#x2F;CSS示例</span></h2><pre><code class="html">&lt;!DOCTYPE html&gt;
+<h2><span id="3-htmlx2fcss示例">3. HTML&#x2F;CSS示例</span></h2><pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;zh-CN&quot;&gt;
 &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot;&gt;
@@ -205,7 +205,7 @@ def slow_function():
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<h2><span id="4-java示例">4. Java示例</span></h2><pre><code class="java">import java.util.*;
+<h2><span id="4-java示例">4. Java示例</span></h2><pre><code class="language-java">import java.util.*;
 
 // 单例模式实现
 public class DatabaseConnection &#123;
@@ -253,7 +253,7 @@ public class StreamExample &#123;
     &#125;
 &#125;
 </code></pre>
-<h2><span id="5-c语言示例">5. C语言示例</span></h2><pre><code class="c">#include &lt;stdio.h&gt;
+<h2><span id="5-c语言示例">5. C语言示例</span></h2><pre><code class="language-c">#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 
 // 链表节点结构
@@ -307,7 +307,7 @@ int binarySearch(int arr[], int left, int right, int target) &#123;
     return -1;
 &#125;
 </code></pre>
-<h2><span id="6-sql示例">6. SQL示例</span></h2><pre><code class="sql">-- 创建用户表
+<h2><span id="6-sql示例">6. SQL示例</span></h2><pre><code class="language-sql">-- 创建用户表
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50) NOT NULL UNIQUE,
@@ -345,7 +345,7 @@ ORDER BY article_count DESC;
 CREATE INDEX idx_articles_user_id ON articles(user_id);
 CREATE INDEX idx_articles_published ON articles(published_at DESC);
 </code></pre>
-<h2><span id="7-shellx2fbash示例">7. Shell&#x2F;Bash示例</span></h2><pre><code class="bash">#!/bin/bash
+<h2><span id="7-shellx2fbash示例">7. Shell&#x2F;Bash示例</span></h2><pre><code class="language-bash">#!/bin/bash
 
 # 备份脚本
 BACKUP_DIR=&quot;/backup&quot;
@@ -402,7 +402,7 @@ main() &#123;
 # 执行主函数
 main
 </code></pre>
-<h2><span id="8-typescript示例">8. TypeScript示例</span></h2><pre><code class="typescript">// 泛型接口
+<h2><span id="8-typescript示例">8. TypeScript示例</span></h2><pre><code class="language-typescript">// 泛型接口
 interface ApiResponse&lt;T&gt; &#123;
     data: T;
     status: number;
@@ -457,7 +457,7 @@ class UserService &#123;
     &#125;
 &#125;
 </code></pre>
-<h2><span id="9-rust示例">9. Rust示例</span></h2><pre><code class="rust">use std::collections::HashMap;
+<h2><span id="9-rust示例">9. Rust示例</span></h2><pre><code class="language-rust">use std::collections::HashMap;
 use std::fmt;
 
 // 定义枚举
@@ -525,7 +525,7 @@ fn main() &#123;
     &#125;
 &#125;
 </code></pre>
-<h2><span id="10-go示例">10. Go示例</span></h2><pre><code class="go">package main
+<h2><span id="10-go示例">10. Go示例</span></h2><pre><code class="language-go">package main
 
 import (
     &quot;encoding/json&quot;
